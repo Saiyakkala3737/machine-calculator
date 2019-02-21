@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="container">
+        <input disabled id="input" type="text">
+        <br>
+        <input disabled id="result" type="text" value="0">
+        <table class="calculator__keys">
+            <tr>
+                <td onclick="allClear()">ac</td>
+                <td onclick="backSpace()">c</td>
+                <td onclick="numberClick('%')">%</td>
+                <td onclick="numberClick('*')">*</td>
+            </tr>
+            <tr>
+                <td onclick="numberClick(7)">7</td>
+                <td onclick="numberClick(8)">8</td>
+                <td onclick="numberClick(9)">9</td>
+                <td onclick="numberClick('/')">\</td>
+            </tr>
+            <tr>
+                <td onclick="numberClick(4)">4</td>
+                <td onclick="numberClick(5)">5</td>
+                <td onclick="numberClick(6)">6</td>
+                <td onclick="numberClick('-')">-</td>
+            </tr>
+            <tr>
+                <td onclick="numberClick(1)">1</td>
+                <td onclick="numberClick(2)">2</td>
+                <td onclick="numberClick(3)">3</td>
+                <td onclick="numberClick('+')">+</td>
+            </tr>
+            <tr>
+                <td onclick="numberClick(0)">0</td>
+                <td onclick="numberClick('.')">.</td>
+                <td onclick="numberClick(00)">00</td>
+                <td onclick="answer()">=</td>
+            </tr>
+        </table>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
